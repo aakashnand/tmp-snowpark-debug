@@ -7,7 +7,7 @@
 *$py.class
 
 # Distribution / packaging
-.env
+.env*
 .Python
 build/
 develop-eggs/
