@@ -59,5 +59,8 @@ Model Log Time: 12.176515340805054 secs.
 Training time 108.68230938911438 secs.
 ```
 
-> [!CAUTION]
-> Currently the time taken to train model locally is 39.89 secs and in snowpark same model takes about 108.68 secs
+## Reproduce package import bug
+
+1. Once you have deployed the stored procedure. Make changes to config directory `config.settings.py`. The changes can be anything like adding comment, importing simple package or just add print statement
+2. Redeploy the stored procedure using `python3 deploy_stored_procedure.py`
+3. Go to Snowsight UI and confirm that the package ml_project.zip doesn't get updated

@@ -11,7 +11,7 @@ from snowflake.ml.model import custom_model, model_signature
 from snowflake.ml.registry import Registry
 from snowflake.snowpark import Session
 
-from ml_project.config import SNOWFLAKE_CONN, prophet_config
+from ml_project.config.settings import SNOWFLAKE_CONN, prophet_config
 from ml_project.snowparkprophet import SnowParkProphet
 from ml_project.utils import get_next_version, log_snowflake_connection_info
 

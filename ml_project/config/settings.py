@@ -1,4 +1,9 @@
 import os
+import sys
+
+# This is new comment
+# THis another comment
+
 
 SNOWFLAKE_CONN = {
     "account": os.getenv("SF_ACCOUNT", "DEFAULT_ACCOUNT"),
@@ -28,3 +33,5 @@ prophet_config = {
         "training_table_name": "DATA.PJME_HOURLY",  # Training table is under DATA schema
     },
 }
+
+print("This is hello world")

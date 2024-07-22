@@ -1,7 +1,7 @@
 import pandas as pd
 from snowflake.snowpark import Session
 
-from ml_project.config import SNOWFLAKE_CONN
+from ml_project.config.settings import SNOWFLAKE_CONN
 
 session = Session.builder.configs(SNOWFLAKE_CONN).getOrCreate()
 session.sql("CREATE DATABASE IF NOT EXISTS ML_EXAMPLE_PROJECT").collect()
